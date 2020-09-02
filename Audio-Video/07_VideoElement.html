@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>управление воспроизведением через javascript</title>
+</head>
+<body>
+	<video id="video" style="border: 2px solid gray; cursor: pointer;">
+		<source src="video/vsvideo.mp4" />
+		<source src="video/vsvideo.ogg" />
+		<source src="video/vsvideo.webm" />
+	</video>
+
+	<script>
+		window.onload = function() {
+			var videoElem = document.getElementById('video'); 
+			videoElem.width = videoElem.videoWidth / 2;
+			videoElem.height = videoElem.videoHeight / 2;
+
+			videoElem.onmouseover = function() {
+				this.play();
+			}
+
+			videoElem.onmouseover = function () {
+				this.pause();
+			}
+		}
+	</script>
+</body>
+</html>
