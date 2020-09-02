@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>атрибут autocomplete</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>авторизация</legend>
+			<p>
+				<label>
+					имя пользователя
+					<input type="text" name="username" autocomplete="off" /></label>
+			</p>
+			<p>
+				<label>
+					пароль
+					<input type="password" name="pwd" autocomplete="off" /></label>
+			</p>
+		</fieldset>
+		<p>
+			<input type="submit" value="отправить" />
+		</p>
+	</form>
+	<a href="http://google.com">проверка работа атрибутов формы</a>
+	<p>перейдите по ссылке после чего нажмите на кнопку back. обратите внимание что браузер не запомнил значение в поле ввода пароля</p>
+</body>
+</html>
