@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>элементы типа email, url, tel</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>контактная информация</legend>
+			<p>
+				<label>
+					E-mail
+					<input type="email" name="email" title="формат данных не правильный. только в chrome">
+				</label>
+			</p>
+			<p>
+				<label>
+					Сайт
+					<input type="url" name="website" title="абсолютный URL". обязательно с протоколом http. пример-http://html5readiness.com/"/ ></label>
+			</p>
+			<p>
+				<label>
+					телефон
+					<input type="tel" name="phone"></label>
+			</p>
+		</fieldset>
+		<br>
+		<p>
+			<input type="submit" value="отправить" />
+		</p>
+	</form>
+</body>
+</html>

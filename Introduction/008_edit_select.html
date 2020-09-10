@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>элемент datalist</title>
+</head>
+<body>
+	<form>
+		<p>
+			<label>
+				сумма пожертвования
+				<input type="text" name="donation" list="donations" /></label>
+		</p>
+		<datalist id="donations">
+			<option value="10.00">10.00 $</option>
+			<option value="25.00">25.00 $</option>
+			<option value="50.00">50.00 $</option>
+		</datalist>
+		<p>
+			<input type="submit" name="отправить">
+		</p>
+	</form>
+</body>
+</html>
