@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>сохранение объектов json</title>
+	<script>
+		var person = {};
+		person.firstName = 'jhon';
+		person.lastName = 'doe';
+		person.age = 30;
+
+		function save() {
+			window.localStorage['data'] = JSON.stringify(person);
+		}
+
+		function read() {
+			var data = JSON.parse(window.localStorage["data"]);
+			alert("First Name: " + data.firstName +
+				"\r\nLast Name: " + data.lastName +
+				"\r\nAge: " + data.age);
+		}
+
+		function clearStorage() {
+			window.localStorage.clear();
+		}
+
+	</script>
+</head>
+<body>
+	<button onclick="save()">Save</button>
+	<button onclick="read()">Read</button>
+	<button onclick="clearStorage()">Clear</button>
+	
+</body>
+</html>

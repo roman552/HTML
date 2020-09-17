@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>querySelector function</title>
+	<script>
+		if (window.addEventListener) window.addEventListener('load', loadHandler, false);
+
+		function loadHandler() {
+			var e = document.querySelector('.test');
+
+			e.style.fontSize = "30px";
+			e.style.color = 'red';
+		}
+	</script>
+	<style type="text/css">
+		.test {
+			color: Green;
+		}
+	
+	</style>
+</head>
+<body>
+	<p id="helloworld">
+		Item1
+	</p class="test">
+	<p>
+		Item2
+	</p>
+	<p>
+		Item3
+	</p>
+	<p class="test">
+		Item4
+	</p>
+	<p>
+		Item5
+	</p>
+	<ul class="menu">
+		<li>menu Item 1</li>
+		<li>menu Item 2</li>
+		<li>menu Item 3</li>
+	</ul>
+</body>
+</html>
