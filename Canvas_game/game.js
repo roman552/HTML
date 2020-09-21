@@ -99,7 +99,7 @@ let game = {
 
         if (this.score >= this.blocks.length) {
             this.end("Вы победили");
-            this.sounds.bump.play();
+            
         }
     },
     collideBlocks() {
@@ -228,7 +228,6 @@ game.ball = {
             game.sounds.bump.play();
         } else if (ballBottom > worldBottom) {
             game.end("Вы проиграли");
-            game.sounds.bump.play();
         }
     },
     bumpBlock(block) {
