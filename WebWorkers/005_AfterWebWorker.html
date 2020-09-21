@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>использование Web Worker</title>
+	<script>
+		window.onload = function() {
+			document.getElementById('startButton').onclick = function() {
+			var worker = new Worker('fibonachiWorker.js');
+			worker.addEventListener('message', function (e) {
+				document.getElementById('output').innerHTML += e.data + '<br />';
+			}, false);
+
+			worker.postMessage('');
+			}
+		}
+	</script>
+</head>
+<body>
+	<button id="startButton">start</button>
+	<p id="output"></p>
+</body>
+</html>

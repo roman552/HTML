@@ -15,15 +15,15 @@
 		}, true);
 
 		function startCmd() {
-			worker.postMessage({ cmd: '', msg: ''});
+			worker.postMessage({ cmd: 'start', msg: 'HI'});
 		}
 
 		function unknownCmd() {
-			worker.postMessage({ cmd: '', msg: ''});
+			worker.postMessage({ cmd: 'unknown', msg: '???'});
 		}
 
 		function stopCmd() {
-			worker.postMessage({ cmd: '', msg: ''});
+			worker.postMessage({ cmd: 'stop', msg: 'Bye'});
 		}
 
 		function messageHandler(e) {
