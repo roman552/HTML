@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Workers Support Testing</title>
+	<script type="text/javascript">
+		window.addEventListener('load', function () {
+			if (typeof Worker !== 'undefined') {
+				document.getElementById('support').innerHTML = 'браузер поддерживает HTML5 Web Workers';
+			} else {
+				document.getElementById('support').innerHTML = 'браузер НЕ поддерживает HTML5 Web Workers';
+			}
+		})
+	</script>
+</head>
+<body>
+	<div id="support">
+	</div>
+</body>
+</html>

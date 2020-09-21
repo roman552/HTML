@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Workers Support Testing</title>
+	<script type="text/javascript">
+		var worker = new Worker('task.js'); 
+		worker.addEventListener('message', function (e) {
+				document.getElementById('output').innerHTML += 'ответ потока: ' + e.data;
+		}, true);
+
+		worker.postMessage('hello world'); 
+	</script>
+</head>
+<body>
+	<div id="output"></div>
+</body>
+</html>

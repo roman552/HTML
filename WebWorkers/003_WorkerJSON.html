@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Worker</title>
+	<script type="text/javascript">
+		var worker = new Worker('task2.js');
+
+		window.addEventListener('load', function() {
+			document.getElementById('btnStart').addEventListener('click', startCmd, true);
+			document.getElementById('btnUnknown').addEventListener('click', unknownCmd, true);
+			document.getElementById('btnStop').addEventListener('click', stopCmd, true);
+			worker.addEventListener('message', messageHandler, true);
+		}, true);
+
+		function startCmd() {
+			worker.postMessage({ cmd: '', msg: ''});
+		}
+
+		function unknownCmd() {
+			worker.postMessage({ cmd: '', msg: ''});
+		}
+
+		function stopCmd() {
+			worker.postMessage({ cmd: '', msg: ''});
+		}
+
+		function messageHandler(e) {
+			document.getElementById('output').innerHTML = e.data;
+		}
+
+	</script>
+	 
+</head>
+<body>
+	<button id="btnStart">
+		команда старт</button>
+	<button id="btnUnknown">
+		команда unknown</button>
+	<button id="btnStop">
+		команда стоп</button>
+
+	<div id="output">
+	</div>
+</body>
+</html>
