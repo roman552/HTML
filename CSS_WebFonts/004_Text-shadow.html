@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>text-shadow</title>
+	<style type="text/css">
+		#id1, #id2, #id3 {
+			font-size: 2.5em;
+			font-family: Arial; 
+		}
+		#id1 {
+			-webkit-text-shadow: 3px 2px #FFAE00;
+			text-shadow: 3px 2px #FFAE00;
+		}
+		#id2 {
+			-webkit-text-shadow: 1px 1px 10px #FFAE00;
+			text-shadow: 1px 1px 10px #FFAE00;	
+		}
+		#id3 {
+			-webkit-text-shadow: 2px 2px 2px #FFAE00, 2px 2px 15px #1435AD;
+			text-shadow: 2px 2px 2px #FFAE00, 2px 2px 15px #1435AD;
+		}
+	</style>
+</head>
+<body>
+	<p id="id1">Пример простой тени</p>
+	<p id="id2">пример тени с размытием</p>
+	<p id="id3">несколько теней одновременно</p>
+</body>
+</html>
