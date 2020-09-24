@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>counter</title>
+	<style>
+		body {
+			counter-reset: myIndex;
+		}
+
+		p {
+			counter-increment: myIndex;
+		}
+
+			p:before {
+				content: "урок " counter(myIndex) ". ";
+				font-weight: bold;
+			}
+	</style>
+</head>
+<body>
+	<p>введение</p>
+	<p>семантическая разметка</p>
+	<p>элементы video и audio</p>
+	<p>geolocation API</p>
+	<p>формы html5</p>
+</body>
+</html>
