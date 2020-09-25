@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>content attr</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+			a::after {
+				content: " (" attr(href) ")";
+			}
+	</style>
+</head>
+<body>
+	<a href="https://kutsehariduskeskus.ee/">video lessons</a><br>
+	<a href="http://www.w3schools.com/">w3schools</a><br>
+	<a href="http://www.google.com">google search</a><br>
+</body>
+</html>
