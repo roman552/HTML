@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>:read-write</title>
+	<style type="text/css">
+		input:read-only {
+			opacity: 0.7;
+			border: 1px solid red; 
+		}
+		input:read-write {
+			border: 2px solid green;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<p>
+			<input type="text" size="40" value="введенный текст не может изменяться" readonly="readonly">
+		</p>
+		<p>
+			<input type="text" size="40" value="этот текст может изменяться">
+		</p>
+		<p>
+			<input type="submit" value="отправить">
+		</p>
+	</form>
+</body>
+</html>

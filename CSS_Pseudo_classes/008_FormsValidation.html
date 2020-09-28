@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>invalid</title>
+	<style type="text/css">
+		input:invalid {
+			background: #fdd;
+			font-weight: bold;
+		}
+
+		input.valid {
+			background: #dfd;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<p>адресс сайта</p>
+		<p>
+			<input type="url" required />
+		</p>
+
+		<p>адресс электронной почты</p>
+		<p>
+			<input type="email" required />
+		</p>
+
+		<p>
+			<input type="submit" value="отправить" />
+		</p>
+	</form>
+</body>
+</html>

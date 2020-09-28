@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>indeterminate</title>
+	<style type="text/css">
+		:indeterminate + span {
+			background-color: limegreen;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			var inputs = document.querySelectorAll("input[type=checkbox]");
+			for (var i = 0; i < inputs.length; i++) {
+				inputs[i].indeterminate = true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<p>
+			<input type="checkbox">
+			<span>option 1</span>
+		</p>
+
+		<p>
+			<input type="checkbox">
+			<span>option 2</span>
+		</p>
+	</form>
+</body>
+</html>

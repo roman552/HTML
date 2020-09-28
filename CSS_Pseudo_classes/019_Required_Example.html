@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>:optional</title>
+	<style type="text/css">
+		p > label{
+			width: 100px;
+			float: left;
+			margin: 3px 0px 0px 0px
+		}
+
+		input:required + label:after {
+			content: " *";
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<p>
+			<input type="text" required="required">
+			<label>login</label>
+		</p>
+		<p>
+			<input type="text" required="required">
+			<label>password</label>
+		</p>
+		<p>
+			<input type="text" required="required">
+			<label>email</label>
+		</p>
+		<p>
+			<input type="text">
+			<label>address</label>
+		</p>
+		<p>
+			<input type="text">
+			<label>country</label>
+		</p>
+	</form>
+</body>
+</html>
