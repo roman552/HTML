@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>quotes</title>
+	<style>
+		p:before {
+			content: open-quote;
+		}
+		p:after {
+			content: close-quote;
+		}
+		p.hometown:before {
+			content: no-open-quote;
+		}
+		p.hometown:after {
+			content: no-close-quote;
+		}
+	</style>
+</head>
+<body>
+	<p>my name is homer</p>
+	<p class="hometown">i live in springfield</p>
+</body>
+</html>
