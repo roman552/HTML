@@ -288,7 +288,7 @@ hr {
 	height: 270px;
 }
 
-.info_film imp {
+.info_film img {
 	float: left;
 	margin-right: 2%;
 	border-radius: 5px;
@@ -328,6 +328,10 @@ td img {
 
 .center {
 	text-align: center;
+}
+
+.rating {
+	font-weight: bold;
 }
 
 .footer {
