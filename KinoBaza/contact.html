@@ -11,7 +11,7 @@
 <body>
 <div class="main">
 
-		<div class="header">
+		<header>
 			<div class="logo">
 				<div class="logo_text">
 					<h1><a href="index.html">КиноБаза</a></h1>
@@ -19,79 +19,77 @@
 				</div>
 			</div>
 
-			<div class="menubar">
+			<nav>
 
 				<ul class="menu">
-					<li class="selected"><a href="index.html">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="films.html">Фильмы</a></li>
 					<li><a href="#">Сериалы</a></li>
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
-					<li><a href="contact.html">Контакты</a></li>
+					<li class="selected"><a href="contact.html">Контакты</a></li>
 				</ul>
 
-			</div>
+			</nav>
 
-		</div>
+		</header>
 
 		<div class="site_content">
 			
-			<div class="sidebar_container">
+			<aside>
 				
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Поиск</h2>
 					<form method="post" action="#" id="search_form">
 						<input type="search" name="search_field" placeholder="ваш запрос" />
 						<input type="submit" class="btn" value="найти" />
 					</form>
-				</div>
-
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Вход</h2>
 					<form method="post" action="#" id="login">
 						<input type="text" name="login_field" placeholder="логин" />
 						<input type="password" name="password_field" placeholder="пароль" />
 						<input type="submit" class="btn" value="вход" />
-						<div class="label_passreg_text">
+						<aside class="label_passreg_text">
 							<span><a href="#">забыли пароль?</a></span> | <span><a href="#">регистрация</a></span>
-						</div>
+						</aside>
 
 					</form>
-				</div>
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Новости</h2>
 					<span>31.02.2018</span> 
 					<p>Мы запустили расширенный поиск</p>
 					<a href="#">читать</a>
-				</div>
+				</aside>
 
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Рейтинг фильмов</h2>
 					<ul>
 						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
-						<li><a href="#">Матрица</a><span class="rating_sidebar">8.1</span></li>
-						<li><a href="#">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
-						<li><a href="#">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+						<li><a href="show2.html">Матрица</a><span class="rating_sidebar">8.1</span></li>
+						<li><a href="show3.html">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
+						<li><a href="show4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
 					</ul>
-				</div>
-			</div>
+				</aside>
+			</aside>
 
-			<div class="content">
+			<section>
 				<h1>Контакты</h1>
 				<p>Отправте ваш отзыв о портале КиноМонстр</p>
 
-				<div class="send send_contact">
+				<section class="send send_contact">
 					<form method="post" action="#" id="contact">
 						<input type="text" name="review_name" placeholder="ваше имя">
 						<input type="text" name="review_email" placeholder="ваш email">
 						<textarea id="id1" name="review_text"></textarea>
 						<input class="btn" type="submit" value="отправить">
 					</form>
-				</div>
+				</section>
 
-			</div>
+			</section>
 
 		</div>
-
 	<footer>
 		<p>
 			<a href="index.html">Главная</a> |

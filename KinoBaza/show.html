@@ -11,7 +11,7 @@
 
 	<div class="main">
 
-		<div class="header">
+		<header>
 			<div class="logo">
 				<div class="logo_text">
 					<h1><a href="index.html">КиноБаза</a></h1>
@@ -19,33 +19,32 @@
 				</div>
 			</div>
 
-			<div class="menubar">
+			<nav>
 
 				<ul class="menu">
-					<li class="selected"><a href="index.html">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="films.html">Фильмы</a></li>
 					<li><a href="#">Сериалы</a></li>
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
-					<li><a href="contact.html">Контакты</a></li>
+					<li class="selected"><a href="contact.html">Контакты</a></li>
 				</ul>
 
-			</div>
+			</nav>
 
-		</div>
+		</header>
 
 		<div class="site_content">
 			
-			<div class="sidebar_container">
+			<aside>
 				
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Поиск</h2>
 					<form method="post" action="#" id="search_form">
 						<input type="search" name="search_field" placeholder="ваш запрос" />
 						<input type="submit" class="btn" value="найти" />
 					</form>
-				</div>
-
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Вход</h2>
 					<form method="post" action="#" id="login">
 						<input type="text" name="login_field" placeholder="логин" />
@@ -56,15 +55,15 @@
 						</div>
 
 					</form>
-				</div>
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Новости</h2>
 					<span>31.02.2018</span> 
 					<p>Мы запустили расширенный поиск</p>
 					<a href="#">читать</a>
-				</div>
+				</aside>
 
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Рейтинг фильмов</h2>
 					<ul>
 						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
@@ -72,47 +71,45 @@
 						<li><a href="show3.html">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
 						<li><a href="show4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
 					</ul>
-				</div>
-			</div>
+				</aside>
+			</aside>
 
-			<div class="content">
+			<section>
 				<h1>Интерстеллар</h1>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/R5KHoE_8dgo?showinfo=0" frameborder="0" allowfullscreen></iframe>
-					<div class="info_film_page">
-						<span class="label">рейтинг:</span><span class="value">8.1 / 10</span>
-						<span class="label">год:</span><span class="value">2014</span>
-						<span class="label">режиссер:</span><span class="value">Кристофер Нолан</span>
-						
-					</div>
-					<h2>Описание Интерстеллар</h2>
-					<div class="description_film">
-						<img src="img/inter.png">
-						<article>Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.</article>
-					</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/R5KHoE_8dgo?showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<section class="info_film_page">
+					<span class="label">рейтинг:</span><span class="value">8.1 / 10</span>
+					<span class="label">год:</span><span class="value">2014</span>
+					<span class="label">режиссер:</span><span class="value">Кристофер Нолан</span>
+					
+				</section>
+				<h2>Описание Интерстеллар</h2>
+				<article class="description_film">
+					<img src="img/inter.png">
+					<article>Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.</article>
+				</article>
 
-					<hr>
-					<h2>Отзывы об Интерстеллар</h2>
-					<div class="review">
-						<div class="review_name">
-							Сергей
-						</div>
-						<div class="review_text">
-							Отличный фильм, 3 часа пролетели не заметно.
-						</div>
+				<hr>
+				<h2>Отзывы об Интерстеллар</h2>
+				<article class="review">
+					<article class="review_name">
+						<b>Сергей</b>
+					</article>
+					<article class="review_text">
+						Отличный фильм, 3 часа пролетели не заметно.
+					</article>
 
-					</div>
-					<div class="review">
-						<div class="review_name">
-							Дмитрий
-						</div>
-						<div class="review_text">
-							После фильма Начало, я с нетерпением ждал еще работ от Кристофера Нолана. Итерстеллар меня впечатлил.
-						</div>
-					</div>
-						
-				</div>
-			
-			</div>
+				</article>
+				<article class="review">
+					<article class="review_name">
+						<b>Дмитрий</b>
+					</article>
+					<article class="review_text">
+						После фильма Начало, я с нетерпением ждал еще работ от Кристофера Нолана. Итерстеллар меня впечатлил.
+					</article>
+				</article>
+			</section>
+		</div>	
 
 	<footer>
 		<p>

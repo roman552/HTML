@@ -9,9 +9,7 @@
 </head>
 <body>
 
-	<div class="main">
-
-		<div class="header">
+		<header>
 			<div class="logo">
 				<div class="logo_text">
 					<h1><a href="index.html">КиноБаза</a></h1>
@@ -19,33 +17,32 @@
 				</div>
 			</div>
 
-			<div class="menubar">
+			<nav>
 
 				<ul class="menu">
-					<li class="selected"><a href="index.html">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="films.html">Фильмы</a></li>
 					<li><a href="#">Сериалы</a></li>
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
-					<li><a href="contact.html">Контакты</a></li>
+					<li class="selected"><a href="contact.html">Контакты</a></li>
 				</ul>
 
-			</div>
+			</nav>
 
-		</div>
+		</header>
 
 		<div class="site_content">
 			
-			<div class="sidebar_container">
+			<aside>
 				
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Поиск</h2>
 					<form method="post" action="#" id="search_form">
 						<input type="search" name="search_field" placeholder="ваш запрос" />
 						<input type="submit" class="btn" value="найти" />
 					</form>
-				</div>
-
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Вход</h2>
 					<form method="post" action="#" id="login">
 						<input type="text" name="login_field" placeholder="логин" />
@@ -56,15 +53,15 @@
 						</div>
 
 					</form>
-				</div>
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Новости</h2>
 					<span>31.02.2018</span> 
 					<p>Мы запустили расширенный поиск</p>
 					<a href="#">читать</a>
-				</div>
+				</aside>
 
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Рейтинг фильмов</h2>
 					<ul>
 						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
@@ -72,47 +69,47 @@
 						<li><a href="show3.html">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
 						<li><a href="show4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
 					</ul>
-				</div>
-			</div>
+				</aside>
+			</aside>
 
-			<div class="content">
+			<section>
 				<h1>Матрица</h1>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/pP64gofuNO8" frameborder="0" allowfullscreen></iframe>
-					<div class="info_film_page">
+					<section class="info_film_page">
 						<span class="label">рейтинг:</span><span class="value">8.1 / 10</span>
 						<span class="label">год:</span><span class="value">1999</span>
 						<span class="label">режиссер:</span><span class="value">Лилли Вачовски</span>
 						
-					</div>
+					</section>
 					<h2>Описание Матрица</h2>
-					<div class="description_film">
+					<article class="description_film">
 						<img src="img/matrix.png">
 						<article>Жизнь Томаса Андерсона разделена на две части: днём он - самый обычный офисный работник, получающий нагоняи от начальства, а ночью превращается в хакера по имени Нео, и нет места в сети, куда он не смог бы дотянуться. Но однажды всё меняется — герой, сам того не желая, узнаёт страшную правду: всё, что его окружает — не более, чем иллюзия, Матрица, а люди — всего лишь источник питания для искусственного интеллекта, поработившего человечество. И только Нео под силу изменить расстановку сил в этом чужом и страшном мире.</article>
-					</div>
+					</article>
 
 					<hr>
 					<h2>Отзывы об Матрице</h2>
-					<div class="review">
-						<div class="review_name">
-							Сергей
-						</div>
-						<div class="review_text">
+					<article class="review">
+						<article class="review_name">
+							<b>Сергей</b>
+						</article>
+						<article class="review_text">
 							Отличный фильм, 3 часа пролетели не заметно.
-						</div>
+						</article>
 
-					</div>
-					<div class="review">
-						<div class="review_name">
-							Дмитрий
-						</div>
-						<div class="review_text">
+					</article>
+					<article class="review">
+						<article class="review_name">
+							<b>Дмитрий</b>
+						</article>
+						<article class="review_text">
 							После фильма Матрица, я с нетерпением ждал еще работ от Лилли Вачовски.
-						</div>
-					</div>
+						</article>
+					</article>
 						
-				</div>
+			</section>
 			
-			</div>
+		</div>
 
 	<footer>
 		<p>

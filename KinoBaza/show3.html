@@ -11,7 +11,7 @@
 
 	<div class="main">
 
-		<div class="header">
+		<header>
 			<div class="logo">
 				<div class="logo_text">
 					<h1><a href="index.html">КиноБаза</a></h1>
@@ -19,33 +19,32 @@
 				</div>
 			</div>
 
-			<div class="menubar">
+			<nav>
 
 				<ul class="menu">
-					<li class="selected"><a href="index.html">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="films.html">Фильмы</a></li>
 					<li><a href="#">Сериалы</a></li>
 					<li><a href="rating.html">Рейтинг фильмов</a></li>
-					<li><a href="contact.html">Контакты</a></li>
+					<li class="selected"><a href="contact.html">Контакты</a></li>
 				</ul>
 
-			</div>
+			</nav>
 
-		</div>
+		</header>
 
 		<div class="site_content">
 			
-			<div class="sidebar_container">
+			<aside>
 				
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Поиск</h2>
 					<form method="post" action="#" id="search_form">
 						<input type="search" name="search_field" placeholder="ваш запрос" />
 						<input type="submit" class="btn" value="найти" />
 					</form>
-				</div>
-
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Вход</h2>
 					<form method="post" action="#" id="login">
 						<input type="text" name="login_field" placeholder="логин" />
@@ -56,15 +55,15 @@
 						</div>
 
 					</form>
-				</div>
-				<div class="sidebar">
+				</aside>
+				<aside class="sidebar">
 					<h2>Новости</h2>
 					<span>31.02.2018</span> 
 					<p>Мы запустили расширенный поиск</p>
 					<a href="#">читать</a>
-				</div>
+				</aside>
 
-				<div class="sidebar">
+				<aside class="sidebar">
 					<h2>Рейтинг фильмов</h2>
 					<ul>
 						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
@@ -72,48 +71,48 @@
 						<li><a href="show3.html">Безумный макс</a><span class="rating_sidebar">7.5</span></li>
 						<li><a href="show4.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
 					</ul>
-				</div>
-			</div>
+				</aside>
+			</aside>
 
-			<div class="content">
+			<section>
 				<h1>Безумный Макс</h1>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/-3ZoAp6owdk" frameborder="0" allowfullscreen></iframe>
-					<div class="info_film_page">
+					<section class="info_film_page">
 						<span class="label">рейтинг:</span><span class="value">7.5 / 10</span>
 						<span class="label">год:</span><span class="value">2015</span>
 						<span class="label">режиссер:</span><span class="value">Джордж Миллер</span>
 						
-					</div>
+					</section>
 					<h2>Описание Безумный Макс</h2>
-					<div class="description_film">
+					<article class="description_film">
 						<img src="img/max.png">
 						<article>Преследуемый призраками беспокойного прошлого Макс уверен, что лучший способ выжить - скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, бегущим через всю пустыню на боевой фуре, под предводительством отчаянной Фуриосы.
 						Они сбежали из Цитадели, страдающей от тирании Несмертного Джо, и забрали у него кое-что очень ценное. Разъярённый диктатор бросает все свои силы в погоню за мятежниками, ступая на тропу войны - дорогу ярости.</article>
-					</div>
+					</article>
 
 					<hr>
 					<h2>Отзывы об Безумный Макс</h2>
-					<div class="review">
-						<div class="review_name">
-							Сергей
-						</div>
-						<div class="review_text">
+					<article class="review">
+						<article class="review_name">
+							<b>Сергей</b>
+						</article>
+						<article class="review_text">
 							Отличный фильм, 3 часа пролетели не заметно.
-						</div>
+						</article>
 
-					</div>
-					<div class="review">
-						<div class="review_name">
-							Дмитрий
-						</div>
-						<div class="review_text">
+					</article>
+					<article class="review">
+						<article class="review_name">
+							<b>Дмитрий</b>
+						</article>
+						<article class="review_text">
 							После фильма Безумный Макс, я с нетерпением ждал еще работ от Джорджа Миллера.
-						</div>
-					</div>
+						</article>
+					</article>
 						
-				</div>
+			</section>
 			
-			</div>
+		</div>
 
 	<footer>
 		<p>
