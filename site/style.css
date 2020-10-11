@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0; 
+}
+html{
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(white,silver);
+	margin-left: auto;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	font-family: "Abril Fatface";
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+header {
+	background-color: orange;
+	height: 50; 
+	border-bottom: solid 2px black;
+	width: 100%;
+}
+
+.logo_text{
+	text-decoration: none;
+	color: #442372;
+
+}
+.search {
+	float: right;
+	right: 100%;
+	top: 100%;
+}
+
+nav {
+	background-color: darkorange;
+	height: 30; 
+	width: 100%
+}
+
+nav ul.menu li{
+	display: inline;
+	line-height: 1.5;
+}
+
+nav ul.menu {
+	color: #492373;
+	word-spacing: 10px;
+
+}
+.text {
+	text-decoration: none;
+	color: #442372;
+	font-size: 20px;
+}
+
+.article_text {
+	font-size: 30px;
+	text-align: center;
+	font-style: normal;
+	border: dashed 1px darkorange;
+	border-radius: 1em;
+	border-width: 5px;
+	padding: 5;
+	background-color: silver;
+}
+section {
+	text-align: center;
+}
+.img {
+	border: dashed 1px darkorange;
+	border-radius: 1em;
+	border-width: 5px;
+	padding: 5;
+}
+section ul.img li{
+	display: inline;
+	text-decoration: none;
+}
+main{
+	padding-bottom: 45px; 
+}
+footer{
+	position: fixed;	
+	bottom: 0;
+	width: 100%;
+	background-color: orange; 
+	height: 45px;
+	text-align: center;
+}
+footer ul.menu li{
+	display: inline;
+	line-height: 1.5;
+}
+
+footer ul.menu {
+	border-top: solid 2px black;
+	color: #492373;
+	word-spacing: 10px;
+
+}
+
+input[type=text], select {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+th, td {
+	border: solid 3px darkorange;
+}
+#id1 {
+	width: 200px;
+	height: 250px;
+	resize: none;
+}
